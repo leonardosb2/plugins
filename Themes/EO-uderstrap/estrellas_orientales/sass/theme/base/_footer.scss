@@ -1,0 +1,230 @@
+#site_footer{
+    padding: 107px 0 104px;
+    background-size: cover;
+    background-position: center;
+    .green-link a{
+        font-size: 15px!important;
+        color: $primary !important;
+    }
+    .widget-title{
+        font-size: 15px;
+        color: $primary;
+        font-family: $robot;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 13px;
+    }
+    .menu{
+        
+        li{
+            list-style: none;
+            padding: 9px 0;
+        }
+        a{
+            position: relative;
+            font-size: 13px;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase ;
+        }
+    }
+  
+        .widget.widget_nav_menu{
+            margin-bottom: 47px;
+            min-height: 135px;
+            @media(max-width: 767px){
+                margin-bottom: 15px;
+                min-height: 0;
+            }
+        }
+  
+
+
+
+}
+.img-team1,.img-team2{
+    display: block;
+    // width: 50%;
+}
+.img-team1{
+    margin: 0 0 0 auto;
+}
+.img-team2{
+    margin: 0 auto 0 0;
+}
+p.serie{
+    text-transform: uppercase !important;
+}
+#site_footer .menu a:hover{
+    text-decoration: none;
+}
+#site_footer .menu a:hover::before{
+    width: 100%;
+}
+#site_footer .menu a::before{
+    content: "";
+    position: absolute;
+    background: #04754b;
+    width: 0;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+    -webkit-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    
+}
+#site_footer{
+    .next-mach{
+        margin: 90px auto 0;
+        @media(max-width:767px){
+            margin: 50px auto 0;
+        }
+    }
+}
+.next-mach{
+    font-family: $opensams !important;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    border: 1px solid white;
+    padding: 0px 0 24px;
+    max-width: 260px;
+    
+    .header_mach{
+        padding: 8px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        
+        span{
+            font-size: 10.89px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        h3.date{
+            font-size: 17.95px;
+            color: white;
+            font-weight: 500;
+            font-family: $opensams; 
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+    }
+    .serie{
+        margin: 23px 0 17px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .vs_teams{
+        
+    }
+    .date_place{
+        h4{
+            font-size: 32px;
+            font-family: $opensams; 
+            font-weight: 800;
+            span{
+                font-size: 14.71px;
+            }
+        }
+        p{
+            font-weight: bold;
+            font-size: 10.23px;
+        }
+    }
+    &:before{
+        content: 'PRÓXIMO PARTIDO';
+        position: absolute;
+        bottom: 100.4%;
+        background-color: #04754b;
+        color: #fff;
+        left: -1px;    
+        width: calc(100% + 2px);
+        padding: 15px 10px;
+        font-size: 12px;
+        font-family: $opensams;
+        font-weight: bold;
+    }
+}
+.line-separator{
+    background-color: #f2e75f;
+    height: 2px;
+    margin-top: 70px;
+    img{
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: -52px;
+        max-width: 85px;
+    }
+    @include media-breakpoint-down(xs) {
+        margin-top: 40px;
+        img{
+            top: -33px;
+            max-width: 50px;
+        }
+    }
+}
+.social-cr{
+    text-align: center;
+}
+.text-cr{
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    p{
+        margin-top: 25px;
+        img{
+            margin-left: 10px;
+        }
+    }
+}
+.copy-right{
+    padding-top: 80px;
+    @include media-breakpoint-down(xs) {
+        padding-top: 50px;
+    }
+    .list-links{
+        display: flex;
+        margin: auto;
+        width: 33%;
+        justify-content: space-around;
+        li{
+            display: inline-block;
+            font-size: 40px;
+        }
+        a{
+            color: white;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    
+}
+@media only screen and (max-width: 1140px) {
+    
+}
+@media only screen and (max-width: 960px) {
+    .copy-right .list-links li{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    #site_footer{
+        padding: 20px 0px 30px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .text-cr{
+        p{
+            font-size: 11px;
+        }
+    }
+    
+}

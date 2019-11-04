@@ -1,0 +1,120 @@
+.btn-primary.focus, .btn-primary:focus{
+
+}
+
+.container,.container-header{
+    width: 100%;
+    max-width: 1288px;
+    margin: auto;
+}
+.container-header{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.btn-dark{
+    position: relative;
+    padding: 12px 12px 12px 30px;
+    background: black;
+    color: white;
+    display: inline-block;
+    align-items: center;
+    font-family: $Fjalla;
+    text-transform: uppercase;
+    height: 40px;
+    &:before{
+        position: absolute;
+        content: "\f054";
+        left: 10px;
+        top: 13px;
+        font: normal normal normal 14px/1 FontAwesome;
+    }
+}
+
+.btn{
+    font-family: $Fjalla, sans-serif;
+    font-size: 14.5px;
+    letter-spacing: 1px;
+    line-height: 1;
+    border-radius: 7px;
+    // padding: 9px 8px 9px 20px;
+    padding: 14px 10px 12px 33px;
+    position: relative;
+    &:focus{
+        color: white;
+        box-shadow: none;
+    }
+   &:before{
+      position: absolute;
+      left: 13px;
+      top: 10px;
+      font: normal normal normal 19px/1 FontAwesome;
+      content: "\f105";
+   }
+   &.blue{
+      background-color: #164988 ;
+      border: none;
+      &:hover{
+        background-color: $primary;
+       }
+   }
+   &.black{
+       background-color: black !important; 
+       color: white;
+       text-transform: uppercase;
+       line-height: 1;
+       &:hover{
+        background: $primary !important;
+       }
+   }
+   &.red{
+       background: $red!important;
+       color: $white!important;
+       &:focus,
+       &:active{
+        background: $red;
+        color: $white;
+       }
+   }
+   &.back{
+        position: absolute;
+        top: -3px;
+        width: 100vw;
+        background: #145c42;
+        text-align: left;
+        border-radius: 0;
+        color: white;
+        padding-left: 40px;
+        font-size: 17px;
+        &::before{
+            content: "\f104";
+            font-size: 25px;
+        }
+   }
+}
+.btn-primary:hover{
+    border-color: transparent;
+}
+#categories-3 .widget-title{
+    display: none;
+}
+@media only screen and (max-width:992px){
+    .btn{
+        font-size: 12px;
+        padding: 10px 8px 10px 28px;
+        &::before{
+            top: 5px;
+        }
+    }
+}
+.site-main{
+    padding-top: 135px;
+    &>.container{
+        padding-top: 1.3rem;
+    }
+    @media (max-width: 991px){
+        padding-top: 108px;
+    }
+    @media (max-width: 721px){
+        padding-top: 90px;
+    }
+}

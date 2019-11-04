@@ -1,0 +1,24 @@
+.green-gradient{
+   content: "";
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: 0;
+   background: -moz-linear-gradient(top,  rgba(12,117,75,0) 11%, rgba(12,117,75,1) 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(top,  rgba(12,117,75,0) 11%,rgba(12,117,75,1) 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom,  rgba(12,117,75,0) 11%,rgba(12,117,75,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000c754b', endColorstr='#0c754b',GradientType=0 ); /* IE6-9 */
+}
+.bg-cover{
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.post-slider .item{
+   background-size: 100% 100%;
+}
+.section-page-news .post-down{
+   background-position: top center;
+}

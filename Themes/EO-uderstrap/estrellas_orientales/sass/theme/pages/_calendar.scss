@@ -1,0 +1,225 @@
+.section-match-date{
+    padding-bottom: 35px;
+    .contetn-date-current{
+        display: inline-block;
+        
+        #calendar_wrap{
+            tbody td{
+                width: 35px;
+                height: 35px;
+                text-align: center;
+            }
+            thead th{
+                color: #c1c1c1;
+                font-size: 12px;
+                font-family: $opensams;
+                padding: 6px;
+            }
+            td#today{
+                a{
+                    width: 35px;
+                    height: 35px;
+                    display: inline-block;
+                    border-radius: 100%;
+                    background-color: $primary; 
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        @include media-breakpoint-down(xs) {
+            h2{
+                text-align: center;
+            }
+            #calendar_wrap{
+                display: table;
+                margin: 0 auto 20px;
+            }
+        }
+    }
+    .calendar-btn{
+        color: $primary;
+        border: none;
+        background-color: transparent;
+    }
+    #datepicker{
+        position: absolute;
+        z-index: 30;
+        left: 10%;
+    }
+    .timer{
+        width: auto;
+        position: static;
+        margin: 0;
+    }
+}
+.section-result-matchs{
+    padding: 40px 0 60px;
+    background: #f5f5f5;
+    .match-n{
+        padding-top: 15px;
+        >h2{
+            font-size: 32px;
+            font-family: $opensams;
+            font-weight: 900;
+            line-height: 25px; 
+        }
+        .sub-title{
+            font-size: 14.5px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: $opensams;
+        }
+        .col-logo-team img{
+            max-height: 55px;
+            max-width: 55px;
+            margin: auto;
+            object-fit: contain;
+        }
+    }
+    .row-match{
+        position: relative;
+        box-shadow: 0 0 10px 0 #e0e0e0;
+        background: white;
+        padding: 41px 46px 18px 23px;
+        .team-n{
+            h2,h3{
+                margin-top: 12px;
+                margin-bottom: 0;
+                line-height: 1;
+            }
+        }
+        .border-left{
+            border-color: #d4d4d4;
+        }
+        .share{
+            position: absolute;
+            right: 19px;
+            font-size: 32px;
+            color: black;
+            font-weight: 900;
+        }
+        .face{
+            top: 32%;
+            right: 25px;
+        }
+        .twiter{
+            bottom: 25%;
+        }
+        @media(max-width:991px){
+            padding: 41px 0px 10px 0px;
+        }
+    }
+    .team-vs{
+        padding: 20px 0px 20px 24px;
+        text-transform: uppercase;
+        h3{
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+    .team-vs,.content-table{
+        background: #fcfcfc;
+        border: 1px solid #ececec;
+        position: relative;
+    }
+    .content-table{
+        padding: 4px;
+    }
+    .stadum{
+        content: "Estadio J. Javier - serie regular";
+        text-transform: uppercase;
+        position: absolute;
+        top: -27px;
+        right: 0;
+        font-family: $opensams;
+        font-weight: 600;
+        font-size: 13px;
+        color: #c1c1c1;
+        p{
+            font-size: 13px;
+        }
+    }
+    .content-table:before{
+        content: "RESULTADOS";
+        text-transform: uppercase;
+        position: absolute;
+        top: -27px;
+        left: 0;
+        font-family: $opensams;
+        font-weight: 600;
+        font-size: 13px;
+        color: #c1c1c1;
+    }
+    .content-table:after{
+        content: '';
+        background: url(../images/swipe.gif);
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: -30px;
+        right: 0;
+        background-position: center;
+        background-size: 100%;
+        filter: grayscale(100%) brightness(45%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(.8);
+        @media(min-width:767px){
+            display: none;
+        }
+    }
+    .content-table{
+        text-align: center;
+        @media only screen and (min-width: 992px) {
+            height: 100%;
+        }
+        thead{
+            background: $primary;
+            color: white;
+            
+            th{
+                width: 60px;
+                height: 27px;
+                font-size: 13px;
+            }
+        }
+        tbody{
+            tr{
+                height: 64px;
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .section-result-matchs .row-match .team-n h2{
+        text-align: center;
+    }
+    .section-result-matchs .row-match {
+        .border-left{
+            border-left: none !important; 
+        }
+        .share{
+            position: static;
+            margin: 16px 12px;
+            &.face{
+                margin-left: auto !important;
+            }
+            &.twiter{
+                margin-right: auto !important;
+            }
+        }
+    }
+    .section-result-matchs .content-table{
+        margin-top: 40px;
+    }
+    .section-result-matchs .team-vs{
+        padding: 20px 20px 20px 24px;
+    }
+    .section-result-matchs .stadum{
+        p{
+            font-size: 13px;
+        }
+    }
+}

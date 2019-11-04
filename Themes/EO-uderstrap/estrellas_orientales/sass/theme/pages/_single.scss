@@ -1,0 +1,65 @@
+.section-single{
+    h3{
+        font-size: 50px;
+        line-height: 55px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+p.by-author{
+    margin: 15px 0  0  0;
+}
+.img-post{
+    border: 2px solid $primary;
+}
+.info-post{
+    padding: 17px 0;
+    span{
+        color: #04754b;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    ul li{
+        display: inline-block;
+        a{
+            background: black;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: block;
+            font-weight: bold;
+            font-size: 12px;
+            margin: 0px 0 10px 0;
+            &:hover{
+                background: $primary;
+                text-decoration: none;
+            }
+        }
+    }
+    @media only screen and (max-width:767px){
+        .post-categories{
+            text-align: left;
+        }
+    }
+}
+.content-post{
+    p{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+}
+@media only screen and (max-width:990px){
+    .section-single h3{
+        font-size: 28px;
+        line-height: 1.4;
+    }
+    .content-post p{
+        font-size: 14px;
+    }
+    .info-post ul li a{
+        padding: 7px 10px;
+        font-size: 10px;
+    }
+}

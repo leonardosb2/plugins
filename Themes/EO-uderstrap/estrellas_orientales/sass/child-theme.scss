@@ -1,0 +1,42 @@
+@import "theme/base/variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "assets/bootstrap4";// <--------- Loads Bootstrap3 or Bootstrap4. Change from /bootstrap3 to /bootstrap4 Watch out! just for testing in the moment!
+@import "assets/magnific-popup"; 
+@import "../src/sass/understrap/understrap/understrap";// <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+@import "../src/sass/understrap/theme/contact-form7";// <-------- Loads some basic styling for contact form 7 plugin
+@import "../src/sass/slick/slick";
+@import "../src/sass/slick/slick-theme";
+
+//mixins
+@import "theme/mixins/all";
+
+//Optional files - If you don´t use the corresponding scripts/fonts comment em out
+@import "assets/font-awesome"; // <------- Font Awesome Icon font
+@import "assets/underscores"; // <------- Underscores media styles
+
+// Any additional imported files //
+@import "theme/base/base";  // <--------- Add your styles into this file
+@import "theme/base/structure";  // <--------- Add your styles into this file
+@import "theme/base/header";  // <--------- Add your styles into this file
+@import "theme/base/footer";  // <--------- Add your styles into this file
+@import "theme/base/404";  // <--------- Add your styles into this file
+@import "theme/base/search";  // <--------- Add your styles into this file
+
+//pages
+@import "theme/pages/home2.scss";  // <--------- Add your styles into this file
+@import "theme/pages/home";
+@import "theme/pages/calendar";
+@import "theme/pages/photos";
+@import "theme/pages/videos";
+@import "theme/pages/news";
+@import "theme/pages/single";
+@import "theme/pages/players";
+@import "theme/pages/single-player";
+@import "theme/pages/statistics";
+@import "theme/pages/teltelo";
+@import "theme/pages/archive";
+@import "theme/pages/fans-zone";
+@import "theme/pages/contact";
+@import "theme/pages/results";
+@import "theme/pages/positions";
+@import "theme/pages/lidom"; 
+@import "theme/pages/roster";

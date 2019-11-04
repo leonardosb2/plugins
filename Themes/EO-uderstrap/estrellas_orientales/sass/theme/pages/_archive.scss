@@ -1,0 +1,103 @@
+.archive{
+    .page-title{
+        text-transform: uppercase;
+    }
+    .entry-header{
+        padding: 15px 0;
+    }
+    .entry-content{
+        p{
+            margin-bottom: 5px;
+        }
+    }
+    .entry-footer{
+        .comments-link{
+            display: none;
+        }
+    }
+    article.post{
+        margin-bottom: 15px;
+        img{
+            margin-bottom: 10px;
+        }
+    }
+    #right-sidebar{
+        li{
+            margin-bottom: 8px;
+            a{
+                line-height: normal;
+            }
+        }
+        .widget_search{
+            margin-bottom: 10px;
+            input{
+                height: 40px;
+                border-color: #04754a;
+                font-size: 14px;
+                border: 1px solid #04754a;
+            }
+        }
+        .widget{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #04754a;
+            margin-bottom: 10px;
+        }
+    }
+}
+.section-category{
+    padding: 40px 0;
+}
+.pre-content{
+    padding-bottom: 18px;
+}
+.written-by{
+    border: 1px solid #e9e9e9;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    img{
+        max-width: 170px;
+    }
+    .opinion-content{
+        margin-left: 15px;  
+        h4{
+            font-size: 16px;
+            text-transform: uppercase;
+            span{
+                color: $primary;
+            }
+        }
+        p{
+            line-height: normal;
+        }
+    }
+    .btn.black{
+        font-size: 12px;
+        padding: 10px 10px 8px 10px;
+        &::before{
+            content: none;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        padding: 12px 8px;
+        img{
+            max-width: 80px;
+        }
+        .opinion-content{
+            h4{
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        display: block;
+        text-align: center;
+        .opinion-content{
+            h4{
+                margin-top: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+//lidom page
+.section-emed {
+    /*background: black;*/
+    .container{
+        max-height: 615px;
+        overflow: scroll;
+        iframe{
+            width: 100%;
+        }
+    }
+}

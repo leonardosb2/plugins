@@ -1,0 +1,59 @@
+/*
+Theme Name:   Signs in Bulk
+Theme URI:    https://signsinbulk.com
+Description:  Signs in Bulk theme
+Author:       Signs in Bulk
+Author URI:   https://signsinbulk.com
+Template:     generatepress
+Version:      0.1
+*/
+.wrap{
+  max-width: 1400px;
+  margin: auto;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.wrap.before-header{
+  max-width: 1320px;
+}
+.no-wrap{
+  
+}
+
+
+.separate-containers .site-main{
+  margin-top: 0;
+}
+.page .inside-article{
+  padding-top: 0;
+}
+/**/
+.features-signs .sow-features-list .sow-features-feature .textwidget h5{
+  font-weight: 600;
+}
+
+/* woocommerce singel */
+.do-quantity-buttons form .quantity:not(.buttons-added):not(.hidden):after,.do-quantity-buttons form .quantity:not(.buttons-added):not(.hidden):before{
+  content: none !important;
+}
+.woocommerce div.product div.summary{
+  position: static !important;
+}
+@media (min-width: 768px){
+  .product .woo-sumamry-wrap{
+    grid-template-columns: 45% 55%;
+  }
+  .product .woocommerce-tabs{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.woo-gallery-stack{
+  display: none !important;
+}
+
+
+

@@ -1,0 +1,42 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+
+//
+// Color system
+//
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+//font-family: 'Fjalla One', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+//font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+//font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+//font-family: 'Fjalla One', sans-serif;
+@font-face {
+    font-family: "goodb";
+    font-weight: normal;
+    src: url(../fonts/goodbrush/Good-Brush.woff);
+}
+//colors
+$primary: #04754b;
+$primary-light: #00be78;
+
+$white:white;
+$gray:#969696;
+$black: #000;
+$red: #fc0802;
+
+
+
+
+//Fonts
+$font_general:'Roboto';
+$Fjalla:'Fjalla One';
+$robot:'Roboto';
+$opensams:'Open Sans';
+$goodb:'goodb';

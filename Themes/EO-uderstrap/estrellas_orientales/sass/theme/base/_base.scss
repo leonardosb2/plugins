@@ -1,0 +1,195 @@
+/* Typographical Elements
+--------------------------------------------- */
+
+html {
+	font-size: 62.5%;
+	/* 10px browser default */
+}
+button:focus,a:focus,li:focus {outline:0 !important;}
+/* Chrome fix */
+body {
+	background-color: #fff;
+	color: #000000;
+	font-family: $robot, sans-serif;
+	font-size: 15px;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1;
+}
+
+body.magazine-landing {
+	background-color: #222;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+::-moz-selection {
+	background-color: #222;
+	color: #fff;
+}
+
+::selection {
+	background-color: #222;
+	color: #fff;
+}
+
+a {
+	background-color: inherit;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+a:focus,
+a:hover {
+	color:$primary;
+}
+
+p {
+	margin: 0 0 15px;
+	padding: 0;
+	font-size: 15px;
+}
+
+strong {
+	font-weight: 700;
+}
+li{
+	list-style-type: none;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+mark {
+	background-color: #ddd;
+	color: #000;
+}
+
+blockquote,
+blockquote::before {
+	color: #888;
+}
+
+blockquote {
+	margin: 40px;
+}
+
+cite {
+	font-style: normal;
+}
+
+hr {
+	border: 0;
+	border-collapse: collapse;
+	border-bottom: 2px solid #eee;
+	clear: left;
+	margin: 0 0 40px;
+	padding-top: 20px;
+}
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $Fjalla, sans-serif;
+	font-weight: 500;
+	line-height: 1.4;
+	margin: 0 0 10px;
+}
+
+h1 {
+	font-size: 36px;
+	font-size: 1.5;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 20px;
+   font-weight: 300;
+}
+
+h5 {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+h6 {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+p{
+ margin-bottom: 15px;
+}
+
+
+@media only screen and (max-width: 720px) {
+	body {
+		font-size: 14px;
+	}
+	p{
+		margin-bottom: 8px;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: $Fjalla, sans-serif;
+		font-weight: 500;
+		line-height: 1.4;
+		margin: 0 0 10px;
+	}
+
+	h1 {
+		font-size: 26px;
+	}
+	h2 {
+		font-size: 19px;
+	}
+
+	h3 {
+		font-size: 19px;
+	}
+
+	h4 {
+		font-size: 17px;
+	}
+
+	h5 {
+		font-size: 17px;
+	}
+
+	h6 {
+		font-size: 17px;
+	}
+}

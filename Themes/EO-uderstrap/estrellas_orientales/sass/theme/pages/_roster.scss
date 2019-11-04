@@ -1,0 +1,39 @@
+.container-calendar-roster{
+    position: relative;
+    .week-picker{
+        position: absolute;
+        right: 0;
+        top: 100%;
+        z-index: 999;
+    }
+    button{
+        &.calendar-btn{
+            border: none;
+            padding: 0 0;
+            cursor: pointer;
+            i{
+                font-size: 20px;
+                margin-left: 10px;
+                color: $primary;
+            }
+        }
+    }
+}
+.date-txt{
+    font-size: 14px;
+    font-weight: 500;
+}
+.ui-datepicker{
+    .ui-datepicker-prev,
+    .ui-datepicker-next{
+        span{
+            color: transparent;
+        }
+    }
+}
+.page-template-page-roaster-principal{
+    .section-table{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

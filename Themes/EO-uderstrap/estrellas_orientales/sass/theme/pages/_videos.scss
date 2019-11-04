@@ -1,0 +1,224 @@
+
+.videos-section{
+    position: relative;
+    padding: 10px 0 50px;
+    min-height: 380px;
+    .yotu-videos li > a{
+        overflow: hidden !important;
+        border-radius: 10px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+        opacity: .8;
+        top: 0;
+    }
+    h3{
+        text-align: center;
+        color: $white;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .youtube-links{
+        position: relative;
+        padding: 28px 0 20px;
+        .cta-links{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            @include media-breakpoint-down(sm) {
+                position: relative;
+                transform: none;
+                text-align: center;
+                .youtube-link-icon{
+                    right: 0;
+                    padding-right: 10px;
+                    top: 0;
+                    display: inline-block;
+                    padding-bottom: 10px;
+                }
+                .btn{
+                    display: inline-block;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+        .youtube-link-icon{
+            color: $white;
+            font-size: 36px;
+            right: 12px;
+            position: relative;
+            top: 7px;
+        }
+    }
+    .col-video{
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .btn-content{
+        text-align: center;
+        margin-top: 10px;
+        .btn{
+            margin: 0 10px;
+            padding: 12px 8px 12px 20px;
+            padding-left: 30px;
+            &::before{
+                top: 9px;
+            }
+        }
+    }
+    .yotu-playlist{
+        padding: 0px 0;
+    }
+    .yotu-videos{
+        padding: 0px 0 0;
+        float: initial;
+    }
+    .yotu-pagination-more{
+        &.btn-primary{
+            font-family: "Fjalla One",sans-serif;
+            font-size: 13.5px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: none;
+            padding: 9px 8px 9px 20px;
+            line-height: 1;
+        }
+    }
+    .yotu-video{
+        &:hover{
+            opacity: .8;
+        }
+        &::after{
+            bottom: 6px;
+            @include media-breakpoint-down(lg) {
+                bottom: 4%;
+            }
+        }
+    }
+    .yotu-video-thumb-wrp{
+        &::after{
+            opacity: 1;
+            z-index: 10;
+            top: 40%;
+        }
+    }
+    .slick-slide{
+        &:not(.slick-active){
+            opacity: .5;
+            @media(max-width:991px){
+                opacity: 1;
+            }
+        }
+    }
+    
+    &.section-videos-yt{
+        .yotu-video-thumb-wrp::after{
+            top: 40%;
+        }
+        .yotu-video-title{
+            top: 50% !important;
+        }
+    } 
+}
+body .yotu-lightbox{
+    .yotu-lightbox-body{
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+} 
+.grid-video{
+    .content-video {
+        min-height: 100%;
+        position: relative;
+        @extend .bg-cover;
+        height: 260px;
+        border-radius: 6px;
+        display: flex !important;
+        align-items: center;
+        text-align: center;
+        z-index: 9;
+        &:before{
+            border-radius: 6px;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: -moz-linear-gradient(top,  rgba(0,0,0,0.1) 5%, rgba(0,0,0,0.52) 59%, rgba(0,0,0,0.84) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(0,0,0,0.1) 5%,rgba(0,0,0,0.52) 59%,rgba(0,0,0,0.84) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(0,0,0,0.1) 5%,rgba(0,0,0,0.52) 59%,rgba(0,0,0,0.84) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#d6000000',GradientType=0 ); /* IE6-9 */
+        }
+        iframe {
+            opacity: 0;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100% !important;
+            height: 100%;
+            border-radius: 6px;
+        }
+        p{
+            color: $white;
+            font-size: 19px;
+            margin: 20px 10px;
+            font-weight: 500;
+        }
+        
+        .play-video {
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .box-video{
+            position: relative;
+            img{
+                display: initial;
+            }
+        }
+    }
+    .yotu-videos{
+        li{
+            @include media-breakpoint-down(xs) {
+                .yotu-video-thumb-wrp::after{
+                    top: 36%;
+                    width: 45px;
+                }
+            }
+            @media (max-width: 480px) {
+                width: 100%!important;
+            }
+        }
+    }
+}
+
+.yotu-video:before {
+    border-radius: 6px;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(0,0,0,.1) 5%,rgba(0,0,0,.52) 59%,rgba(0,0,0,.84) 100%);
+    z-index: 9;
+}
+.yotu-videos.yotu-preset-gplus .yotu-video-title{
+    top: 55%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: transparent !important;
+    font-size: 19px !important;
+}
+.yotu-video-thumb-wrp::after{
+    background: url(../images/combined-shape-2.png) no-repeat 50% 50% !important;
+    width: 45px;
+}

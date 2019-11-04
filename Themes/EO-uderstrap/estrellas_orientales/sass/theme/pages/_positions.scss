@@ -1,0 +1,40 @@
+//positions
+.positions-eo .section-table{
+    height: 74%;
+    &::before{
+       background: linear-gradient(to right,#f4f4f4 0,#f4f4f4 61%,rgba(255,255,255,.94) 74%,rgba(255,255,255,.69) 100%);
+       z-index: 0;
+    }
+    &::after{
+       content: '';
+       position: absolute;
+       background: #f5f5f5;
+       right: 100%;
+       width: 100%;
+       height: 100%;
+       top: 0;
+    }
+    .title-share{
+        margin-top: 44px;
+    }
+    .share.face,.share.twiter{
+        color: black;
+        font-size: 34px;
+        margin-right: 50px;
+        margin-top: 20px;
+        display: inline-block;
+        &:hover{
+          color: $primary;
+        }
+    }
+}
+.hidden-widgets{
+    #categories-3,#media_image-2{
+        display: none;
+    }
+}
+@media only screen and (max-width:720px){
+    .positions-eo .section-table{
+        height: auto;
+    }
+}   

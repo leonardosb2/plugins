@@ -1,0 +1,189 @@
+.section-contact{
+    color: white;
+    padding: 40px 0 60px;
+    background-position: center;
+    background-size: 100% 100%;
+    h2{
+        margin: 0;
+    }
+    .social-top{
+        a{
+            font-size: 40px;
+            margin-right: 55px;
+        }
+    }
+    hr{
+        border: 0;
+        border-bottom: 4px solid #eee;
+        clear: left;
+        margin: 0 0 20px;
+        padding-top: 10px;
+    }
+    .type-two-hr{
+        border-bottom: 1px solid #eee;
+        margin: 0 0 36px;
+        padding-top: 30px;
+    }
+    h2.text-uppercase{
+        margin-bottom: 20px;
+    }
+    
+}
+.page-template-page-contact{
+    .section-contact .social-top a{
+        color: $white;
+        &:hover{
+            opacity: .7;
+        }
+    }    
+}
+
+.section-contact .wpcf7{
+    max-width: 100%;
+}
+.content-form-page{
+    .wpcf7 input[type=email],.wpcf7 input[type=text],.wpcf7 select,.wpcf7 textarea{
+        padding: 0px 15px;
+        font-size: 17px;
+        color: #000;
+        box-shadow: 0 0 0 1px transparent;
+        border: 1px solid #dfdfdf!important;
+        border-radius: 0;
+        box-sizing: border-box;
+        background-clip: unset;
+        &::placeholder{
+            color: #c6c6c6;
+        }
+        &:focus{
+            box-shadow: 0 0 0 3px black;
+        }   
+    }
+    .wpcf7 input[type=email],.wpcf7 input[type=text],.wpcf7 select,.caja{
+        height: 50px;
+    }
+    .wpcf7 input[type=email],.wpcf7 input[type=text],.wpcf7 .caja,.wpcf7 textarea{
+        margin: 15px 0;
+    }
+    .caja::after{
+        content: "\f107";
+        font: normal normal normal 26px/1 FontAwesome;
+        background-color: white;
+        padding-top: 0;
+        color: $primary;
+        top: 11px;
+        right: 10px;
+    }
+    .wpcf7 .caja{
+        border: none;
+        background: white;
+
+        display: block;
+        width: 100%;
+        &:focus{
+            border: 3px solid black ;
+        }   
+    }
+    .wpcf7 select{
+        color: #6c757d;
+        &:focus{
+            border: none ;
+        } 
+    }
+    .wpcf7 textarea{
+        padding: 20px;
+    }
+    
+}
+.content-form-page{
+    .ui-select{width: 100%}
+    /* This is to remove the arrow of select element in IE */
+    select::-ms-expand {	display: none; }
+    select{
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    
+}
+@-moz-document url-prefix(){
+    .content-form-page{
+        .ui-select{border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; position: relative; overflow: hidden;}
+        .ui-select select { width: 110%; background-position: right 30px center !important; border: none !important;}
+    }
+}
+
+
+.submit-p{
+    position: relative;
+    background: #fff;
+    display: inline-block;
+    padding: 13px 34px 10px 18px;
+    border-radius: 5px;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    &:hover{
+        background: $primary;
+        input[type=submit],&::after{
+            color: white;
+        }
+    }
+    input[type=submit]{
+        color: #000;
+        height: 100%;
+        width: 100%;
+        padding: 10px 32px;
+        font-weight: bold;
+        border: none;
+        padding: 3px;
+        font-size: 16.49px;
+    }
+    &::after{
+        position: absolute;
+        right: 13px;
+        content: "\f105";
+        color: #000;
+        font: normal normal normal 19px/1 FontAwesome;
+        top: 19.3%;
+        font-size: 24px;
+    }   
+    .ajax-loader{
+        position: absolute;
+        right: -40px; 
+        top: 10px;
+    } 
+}
+.adress{
+    h2{
+        margin: 40px 0 20px;
+    }
+    @media only screen and (max-width: 720px) {
+        font-size: 22px;
+    }
+}
+.info-contact-page{
+    a{
+        color: white;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .info-numbers{
+        margin-top: 30px;
+    }
+    .section-contact .social-top a {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    .content-form-page .wpcf7 input[type=email], .content-form-page .wpcf7 input[type=text], .content-form-page .wpcf7 select, .content-form-page .wpcf7 textarea{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .submit-p  {
+        padding: 9px 30px 9px 13px;
+        border-radius: 5px;
+        input[type=submit]{
+            padding: 7px;
+        }
+    }
+}

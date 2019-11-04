@@ -1,0 +1,117 @@
+.section-single-players.single-jugador .item-slider-p .content-s-player{
+    h4{
+        font-size: 19px;
+        font-family: $robot;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    h6{
+        font-family: $robot;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+}
+.section-players{
+    padding-bottom: 40px;
+    .item-player{
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+}
+.section-single-players.single-jugador .content-s-player{
+    min-height: auto;
+    padding-top: 0px;
+    h3{
+        font-size: 67px;
+    }
+    .info{
+        padding-top: 112px;
+    padding-bottom: 100px;
+    }
+    .img-center-player{
+        background-position: center 16px;
+        background-size: cover;
+        text-align: center;
+        position: relative;
+        img{
+            position: relative;
+            left: auto; 
+            right: auto; 
+            margin: auto; 
+            height: 90%; 
+            z-index: 100;
+            border-radius: 10px;
+        }
+    }
+    .number-player{
+        top: 0;
+    }
+    p{
+        line-height: normal;
+        text-transform: initial;
+    }
+    @media (max-width: 576px) {
+        &>.row{
+            flex-direction: column-reverse;
+        }
+    }
+    
+}
+//media querys
+@media only screen and (max-width: 1140px) {
+    .section-single-players.single-jugador  .item-slider-p .content-s-player {
+        .info{
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        h3{
+            font-size: 40px;
+            margin-top: 23%;
+        }
+        h6{
+            margin-bottom: 5px;
+        }
+        h4{
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+    }
+    .content-figure{
+        padding-top: 100%;
+    }
+    
+    
+}
+@media only screen and (max-width: 720px) {
+    .section-single-players.single-jugador .content-s-player .img-center-player {
+        background-position: center 14px;
+        img{
+            width: 100%;
+        }
+    }
+    .content-figure{
+        padding-top: 75%;
+    }
+    
+    .section-single-players.single-jugador  .item-slider-p .content-s-player {
+        .info{
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        h3{
+            font-size: 29px;
+            margin-top: 0%;
+        }
+        h6{
+            margin-bottom: 5px;
+        }
+        h4{
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+    }
+    .content-figure .number-player h5 {
+        font-size: calc(10rem + 21vw);
+    }
+}
